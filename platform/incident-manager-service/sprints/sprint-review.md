@@ -1,13 +1,12 @@
-# Sprint Review: [Core Logic & API]
+# Sprint Review: [Consumer Integration]
 ## Objetivos
-- Implementar Entidad `Incident`
-- Implementar `IncidentRepository`
-- Implementar Servicio de Deduplicación
-- Implementar API REST para gestión de incidentes
+- Configurar Spring Cloud Stream con RabbitMQ
+- Implementar `IncidentConsumer` para escuchar eventos
+- Validar procesamiento de eventos
 
 ## Criterios de Aceptación
-1. Se pueden crear incidentes.
-2. Incidentes duplicados no crean registro nuevo.
+1. Mensajes publicados en RabbitMQ son consumidos.
+2. Mensajes consumidos crean incidentes.
 
 ## Estado del Agente
 - **Última ejecución de tests:**
