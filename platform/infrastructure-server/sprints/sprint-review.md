@@ -1,10 +1,6 @@
-# Sprint Review: [Initial Setup]
+# Sprint Review: [Configuration Management]
 ## Objetivos
-- Configurar proyecto con dependencias necesarias
-- Configurar proyecto con herramientas de desarrollo
-- Configurar proyecto con herramientas de testing
-- Configurar proyecto con herramientas de monitorización
-
+Configuration Management sprint to populate the config-repo.
 ## Criterios de Aceptación
 1. El proyecto debe compilar sin errores.
 2. El proyecto debe ejecutar sin errores.
