@@ -1,0 +1,2 @@
+Cuando trabajes en un sub-módulo, lee primero su project.md local. Si hay conflictos entre el project.md local y el global, prioriza el local.
+En cada susbmodulo tienes un archivo cursorrules que te da instrucciones sobre como trabajar en el submodulo.

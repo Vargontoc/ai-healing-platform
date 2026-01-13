@@ -1,0 +1,11 @@
+# REGLAS DE DESARROLLO POR SPRINTS
+1. Antes de escribir cualquier código, lee SIEMPRE el archivo `sprints/sprint-review.md` actual.
+2. Tu prioridad absoluta es marcar los objetivos de ese archivo como completados.
+3. CICLO DE TRABAJO OBLIGATORIO:
+   a. Implementar funcionalidad.
+   b. Ejecutar los tests
+   c. Si los tests fallan: Analizar error -> Corregir código -> Volver a (b).
+   d. Si los tests pasan: Marcar objetivo como [x] en el sprint-review.md.
+4. Al completar todos los objetivos, escribe una sección "Propuesta de Siguientes Pasos" en el sprint-review.md y espera instrucciones para el siguiente sprint.
+5. Renombrar el archivo con la fecha de realización y titulo del sprint. Y crear el sprint-review.md siguiente con los pasos sugeridos y misma estructura.
+6. NO consultes con nadie más que el sprint-review.md actual.
