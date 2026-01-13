@@ -1,13 +1,10 @@
-# Sprint Review: [Initial Setup]
+# Sprint Review: [Maintenance]
 ## Objetivos
-- Configurar proyecto con dependencias necesarias
-- Configurar proyecto con herramientas de desarrollo
-- Configurar proyecto con herramientas de testing
-- Configurar proyecto con herramientas de monitorización
+- Mantener dependencias actualizadas
+- Monitorizar logs en busca de errores
 
 ## Criterios de Aceptación
-1. El proyecto debe compilar sin errores.
-2. El proyecto debe ejecutar sin errores.
+1. Integridad del sistema mantenida.
 
 ## Estado del Agente
 - **Última ejecución de tests:**

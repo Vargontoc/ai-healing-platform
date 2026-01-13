@@ -6,6 +6,10 @@ spring:
     name: infrastructure-server
   profiles:
     active: native
+  security:
+    user:
+      name: admin
+      password: password
   cloud:
     config:
       server:
