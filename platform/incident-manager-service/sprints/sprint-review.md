@@ -1,13 +1,13 @@
-# Sprint Review: [Initial Setup]
+# Sprint Review: [Core Logic & API]
 ## Objetivos
-- Configurar proyecto con dependencias necesarias
-- Configurar proyecto con herramientas de desarrollo
-- Configurar proyecto con herramientas de testing
-- Configurar proyecto con herramientas de monitorización
+- Implementar Entidad `Incident`
+- Implementar `IncidentRepository`
+- Implementar Servicio de Deduplicación
+- Implementar API REST para gestión de incidentes
 
 ## Criterios de Aceptación
-1. El proyecto debe compilar sin errores.
-2. El proyecto debe ejecutar sin errores.
+1. Se pueden crear incidentes.
+2. Incidentes duplicados no crean registro nuevo.
 
 ## Estado del Agente
 - **Última ejecución de tests:**
