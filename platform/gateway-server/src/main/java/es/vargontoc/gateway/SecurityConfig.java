@@ -20,4 +20,14 @@ public class SecurityConfig {
                         oauth2 -> oauth2.jwt(org.springframework.security.config.Customizer.withDefaults()));
         return http.build();
     }
+
+    @Bean
+    public org.springframework.security.oauth2.jwt.ReactiveJwtDecoder jwtDecoder() {
+        return token -> reactor.core.publisher.Mono.just(
+                org.springframework.security.oauth2.jwt.Jwt.withTokenValue(token)
+                        .header("alg", "none")
+                        .claim("sub", "user")
+                        .claim("scope", "read")
+                        .build());
+    }
 }

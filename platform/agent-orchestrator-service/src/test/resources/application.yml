@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    config:
+      enabled: false
+  ai:
+    openai:
+      api-key: "sk-dummy-key"
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  autoconfigure:
+    exclude: org.springframework.ai.vectorstore.pgvector.PgVectorStoreAutoConfiguration
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    enabled: false

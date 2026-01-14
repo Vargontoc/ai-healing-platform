@@ -19,7 +19,6 @@
 		<module>gateway-server</module>
 		<module>agent-orchestrator-service</module>
 		<module>incident-manager-service</module>
-		<module>demo-microservice</module>
 	</modules>
 	<properties>
 		<java.version>21</java.version>

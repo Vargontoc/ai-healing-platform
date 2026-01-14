@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ai_healing_db
+    url: jdbc:postgresql://localhost:5433/ai_healing_db
     username: admin
     password: password
     driver-class-name: org.postgresql.Driver

@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ai_healing_db
+    url: jdbc:postgresql://localhost:5433/ai_healing_db
     username: admin
     password: password
     driver-class-name: org.postgresql.Driver
@@ -13,3 +13,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  cloud:
+    stream:
+      bindings:
+        incident-in-0:
+          destination: incident-events
+          group: incident-manager-group
+
