@@ -13,8 +13,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.time.LocalDateTime;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -31,7 +33,7 @@ class IncidentControllerTests {
     @Test
     void shouldCreateIncident() throws Exception {
         IncidentResponse response = new IncidentResponse(1L, "service-A", "ERR", "Desc", "OPEN", LocalDateTime.now(),
-                LocalDateTime.now(), 1);
+                LocalDateTime.now(), 1, null, "system", LocalDateTime.now());
         when(service.createIncident(any(IncidentRequest.class))).thenReturn(response);
 
         mockMvc.perform(post("/api/v1/incidents")
@@ -46,5 +48,42 @@ class IncidentControllerTests {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.serviceName").value("service-A"));
+    }
+
+    @Test
+    void shouldUpdateStatus() throws Exception {
+        IncidentResponse response = new IncidentResponse(1L, "service-A", "ERR", "Desc", "CLOSED", LocalDateTime.now(),
+                LocalDateTime.now(), 1, null, "system", LocalDateTime.now());
+
+        when(service.updateStatus(eq(1L), eq("CLOSED"), any(), eq("system"))).thenReturn(response);
+
+        mockMvc.perform(put("/api/v1/incidents/1/status")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("""
+                            {
+                                "status": "CLOSED",
+                                "comment": "Closing incident"
+                            }
+                        """))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.status").value("CLOSED"));
+    }
+
+    @Test
+    void shouldAssignIncident() throws Exception {
+        IncidentResponse response = new IncidentResponse(1L, "service-A", "ERR", "Desc", "OPEN", LocalDateTime.now(),
+                LocalDateTime.now(), 1, "john.doe", "system", LocalDateTime.now());
+
+        when(service.assignIncident(eq(1L), eq("john.doe"), eq("system"))).thenReturn(response);
+
+        mockMvc.perform(put("/api/v1/incidents/1/assign")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("""
+                            {
+                                "assignedTo": "john.doe"
+                            }
+                        """))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.assignedTo").value("john.doe"));
     }
 }

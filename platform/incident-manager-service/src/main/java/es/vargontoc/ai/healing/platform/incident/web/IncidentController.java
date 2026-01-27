@@ -4,6 +4,8 @@ import es.vargontoc.ai.healing.platform.incident.service.IncidentService;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentRequest;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentResponse;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentStatsResponse;
+import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentStatusUpdate;
+import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentAssignment;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -67,5 +69,20 @@ public class IncidentController {
         return service.getIncidentByHash(hash)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
+    }
+
+    @Operation(summary = "Update Incident Status", description = "Updates the status of an incident. Valid transitions: OPEN -> CLOSED/RESOLVED, CLOSED -> REOPENED.")
+    @PutMapping("/{id}/status")
+    public ResponseEntity<IncidentResponse> updateStatus(@PathVariable Long id,
+            @RequestBody IncidentStatusUpdate update) {
+        // Hardcoded user 'system' for now
+        return ResponseEntity.ok(service.updateStatus(id, update.status(), update.comment(), "system"));
+    }
+
+    @Operation(summary = "Assign Incident", description = "Assigns an incident to a user.")
+    @PutMapping("/{id}/assign")
+    public ResponseEntity<IncidentResponse> assign(@PathVariable Long id, @RequestBody IncidentAssignment assignment) {
+        // Hardcoded user 'system' for now
+        return ResponseEntity.ok(service.assignIncident(id, assignment.assignedTo(), "system"));
     }
 }

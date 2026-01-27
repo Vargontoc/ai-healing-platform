@@ -51,6 +51,15 @@ public class Incident {
     @Column(length = 4000)
     private String stacktrace;
 
+    @Column(name = "assigned_to")
+    private String assignedTo;
+
+    @Column(name = "updated_by")
+    private String updatedBy;
+
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
     @PrePersist
     public void prePersist() {
         if (detectedAt == null)
@@ -67,6 +76,8 @@ public class Incident {
 
     @PreUpdate
     public void preUpdate() {
-        lastSeen = LocalDateTime.now();
+        // lastSeen is updated by business logic when an occurrence happens
+        // updatedAt tracks manual changes
+        updatedAt = LocalDateTime.now();
     }
 }
