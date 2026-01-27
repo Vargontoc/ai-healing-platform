@@ -89,7 +89,8 @@
     "status": {
       "open": "Open",
       "closed": "Closed",
-      "resolved": "Resolved"
+      "resolved": "Resolved",
+      "reopened": "Reopened"
     },
     "table": {
       "id": "ID",
@@ -127,7 +128,20 @@
     "justNow": "Just now",
     "minutesAgo": "{minutes} minutes ago",
     "hoursAgo": "{hours} hours ago",
-    "daysAgo": "{days} days ago"
+    "daysAgo": "{days} days ago",
+    "assignedTo": "Assigned To",
+    "updatedBy": "Updated By",
+    "lastUpdated": "Last Updated",
+    "actions": "Actions",
+    "updateStatus": "Update Status",
+    "assignIncident": "Assign Incident",
+    "currentStatus": "Current Status",
+    "newStatus": "New Status",
+    "comment": "Comment",
+    "commentPlaceholder": "Add a comment about this status change...",
+    "currentAssignee": "Current Assignee",
+    "assignTo": "Assign To",
+    "assignPlaceholder": "Enter username or email"
   },
   "serviceDetail": {
     "backToServices": "Back to Service Map",
@@ -188,6 +202,11 @@
     "all": "All",
     "yes": "Yes",
     "no": "No",
-    "locale": "en-US"
+    "locale": "en-US",
+    "update": "Update",
+    "updating": "Updating...",
+    "assign": "Assign",
+    "assigning": "Assigning...",
+    "optional": "optional"
   }
 }

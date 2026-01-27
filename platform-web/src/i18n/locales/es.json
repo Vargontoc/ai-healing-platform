@@ -89,7 +89,8 @@
     "status": {
       "open": "Abierta",
       "closed": "Cerrada",
-      "resolved": "Resuelta"
+      "resolved": "Resuelta",
+      "reopened": "Reabierta"
     },
     "table": {
       "id": "ID",
@@ -127,7 +128,20 @@
     "justNow": "Justo ahora",
     "minutesAgo": "hace {minutes} minutos",
     "hoursAgo": "hace {hours} horas",
-    "daysAgo": "hace {days} días"
+    "daysAgo": "hace {days} días",
+    "assignedTo": "Asignado a",
+    "updatedBy": "Actualizado por",
+    "lastUpdated": "Última Actualización",
+    "actions": "Acciones",
+    "updateStatus": "Actualizar Estado",
+    "assignIncident": "Asignar Incidencia",
+    "currentStatus": "Estado Actual",
+    "newStatus": "Nuevo Estado",
+    "comment": "Comentario",
+    "commentPlaceholder": "Agrega un comentario sobre este cambio de estado...",
+    "currentAssignee": "Asignado Actual",
+    "assignTo": "Asignar a",
+    "assignPlaceholder": "Ingresa nombre de usuario o email"
   },
   "serviceDetail": {
     "backToServices": "Volver al Mapa de Servicios",
@@ -188,6 +202,11 @@
     "all": "Todos",
     "yes": "Sí",
     "no": "No",
-    "locale": "es-ES"
+    "locale": "es-ES",
+    "update": "Actualizar",
+    "updating": "Actualizando...",
+    "assign": "Asignar",
+    "assigning": "Asignando...",
+    "optional": "opcional"
   }
 }

@@ -16,7 +16,7 @@ const filters = ref<IncidentFilters>({
 
 const { data, isLoading, isError, error, refetch } = useIncidents(filters)
 
-const statusFilter = ref<'all' | 'OPEN' | 'CLOSED' | 'RESOLVED'>('all')
+const statusFilter = ref<'all' | 'OPEN' | 'CLOSED' | 'RESOLVED' | 'REOPENED'>('all')
 
 const filteredData = computed(() => {
   if (!data.value) return null
@@ -33,17 +33,20 @@ const filteredData = computed(() => {
 })
 
 const statusCounts = computed(() => {
-  if (!data.value) return { all: 0, OPEN: 0, CLOSED: 0, RESOLVED: 0 }
+  if (!data.value) return { all: 0, OPEN: 0, CLOSED: 0, RESOLVED: 0, REOPENED: 0 }
 
   const counts = {
     all: data.value.totalElements,
     OPEN: 0,
     CLOSED: 0,
-    RESOLVED: 0
+    RESOLVED: 0,
+    REOPENED: 0
   }
 
   data.value.content.forEach(incident => {
-    counts[incident.status]++
+    if (incident.status in counts) {
+      counts[incident.status as keyof Omit<typeof counts, 'all'>]++
+    }
   })
 
   return counts
@@ -55,6 +58,8 @@ const getStatusBadgeClass = (status: string) => {
   switch (status) {
     case 'OPEN':
       return `${baseClasses} bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300`
+    case 'REOPENED':
+      return `${baseClasses} bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300`
     case 'CLOSED':
       return `${baseClasses} bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300`
     case 'RESOLVED':
@@ -67,6 +72,7 @@ const getStatusBadgeClass = (status: string) => {
 const getStatusIcon = (status: string) => {
   switch (status) {
     case 'OPEN':
+    case 'REOPENED':
       return AlertCircle
     case 'CLOSED':
       return Clock
@@ -128,7 +134,7 @@ const navigateToDetail = (incidentId: number) => {
     <!-- Status Filters -->
     <div class="flex gap-2 mb-6">
       <button
-        v-for="status in ['all', 'OPEN', 'CLOSED', 'RESOLVED']"
+        v-for="status in ['all', 'OPEN', 'CLOSED', 'RESOLVED', 'REOPENED']"
         :key="status"
         @click="statusFilter = status as typeof statusFilter"
         :class="[

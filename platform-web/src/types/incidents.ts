@@ -3,10 +3,13 @@ export interface Incident {
   serviceName: string
   errorType: string
   description: string
-  status: 'OPEN' | 'CLOSED' | 'RESOLVED'
+  status: 'OPEN' | 'CLOSED' | 'RESOLVED' | 'REOPENED'
   detectedAt: string
   lastSeen: string
   occurrences: number
+  assignedTo?: string
+  updatedBy?: string
+  updatedAt?: string
 }
 
 export interface IncidentPageResponse {
@@ -39,8 +42,17 @@ export interface IncidentPageResponse {
 }
 
 export interface IncidentFilters {
-  status?: 'OPEN' | 'CLOSED' | 'RESOLVED'
+  status?: 'OPEN' | 'CLOSED' | 'RESOLVED' | 'REOPENED'
   serviceName?: string
   page?: number
   size?: number
+}
+
+export interface IncidentStatusUpdate {
+  status: 'OPEN' | 'CLOSED' | 'RESOLVED' | 'REOPENED'
+  comment?: string
+}
+
+export interface IncidentAssignment {
+  assignedTo: string
 }

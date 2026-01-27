@@ -1,5 +1,11 @@
 import { apiClient } from '@/lib/api'
-import type { IncidentPageResponse, IncidentFilters, Incident } from '@/types/incidents'
+import type {
+  IncidentPageResponse,
+  IncidentFilters,
+  Incident,
+  IncidentStatusUpdate,
+  IncidentAssignment
+} from '@/types/incidents'
 
 export const incidentsApi = {
   getIncidents: async (filters: IncidentFilters = {}): Promise<IncidentPageResponse> => {
@@ -26,5 +32,13 @@ export const incidentsApi = {
 
   getIncident: async (id: number): Promise<Incident> => {
     return apiClient.get<Incident>(`/api/v1/incidents/${id}`)
+  },
+
+  updateStatus: async (id: number, update: IncidentStatusUpdate): Promise<Incident> => {
+    return apiClient.put<Incident>(`/api/v1/incidents/${id}/status`, update)
+  },
+
+  assignIncident: async (id: number, assignment: IncidentAssignment): Promise<Incident> => {
+    return apiClient.put<Incident>(`/api/v1/incidents/${id}/assign`, assignment)
   }
 }
