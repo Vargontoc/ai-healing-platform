@@ -159,7 +159,24 @@
     "documentation": "Documentation",
     "noDocuments": "Aucune documentation trouvée pour ce service",
     "uploaded": "Téléchargé",
-    "viewAllDocuments": "Voir tous les documents"
+    "viewAllDocuments": "Voir tous les documents",
+    "autoRefresh": "Actualisation automatique toutes les 30s",
+    "metrics": {
+      "uptime": "Temps de Fonctionnement",
+      "totalRequests": "Requêtes Totales",
+      "requestStatistics": "Statistiques de Requêtes",
+      "total": "Total",
+      "failed": "Échouées",
+      "successful": "Réussies",
+      "performance": "Performance",
+      "successRate": "Taux de Réussite",
+      "errorRate": "Taux d'Erreur",
+      "percentage": "Pourcentage"
+    },
+    "health": {
+      "title": "État de Santé",
+      "freeSpace": "Espace Libre"
+    }
   },
   "knowledge": {
     "title": "Base de Connaissances",

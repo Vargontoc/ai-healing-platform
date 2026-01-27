@@ -12,10 +12,13 @@ export function useServices(refetchInterval: number = 30000) {
   })
 }
 
-export function useService(name: MaybeRef<string>) {
+export function useService(name: MaybeRef<string>, refetchInterval: number = 30000) {
   return useQuery({
     queryKey: ['service', name],
     queryFn: () => servicesApi.getService(unref(name)),
-    enabled: () => !!unref(name)
+    enabled: () => !!unref(name),
+    refetchInterval,
+    refetchIntervalInBackground: true,
+    staleTime: 0
   })
 }

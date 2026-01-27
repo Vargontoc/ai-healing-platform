@@ -159,7 +159,24 @@
     "documentation": "Documentação",
     "noDocuments": "Nenhuma documentação encontrada para este serviço",
     "uploaded": "Enviado",
-    "viewAllDocuments": "Ver todos os documentos"
+    "viewAllDocuments": "Ver todos os documentos",
+    "autoRefresh": "Atualização automática a cada 30s",
+    "metrics": {
+      "uptime": "Tempo Ativo",
+      "totalRequests": "Requisições Totais",
+      "requestStatistics": "Estatísticas de Requisições",
+      "total": "Total",
+      "failed": "Falhadas",
+      "successful": "Bem-sucedidas",
+      "performance": "Desempenho",
+      "successRate": "Taxa de Sucesso",
+      "errorRate": "Taxa de Erro",
+      "percentage": "Porcentagem"
+    },
+    "health": {
+      "title": "Estado de Saúde",
+      "freeSpace": "Espaço Livre"
+    }
   },
   "knowledge": {
     "title": "Base de Conhecimento",

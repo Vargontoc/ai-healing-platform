@@ -159,7 +159,24 @@
     "documentation": "Documentation",
     "noDocuments": "No documentation found for this service",
     "uploaded": "Uploaded",
-    "viewAllDocuments": "View all documents"
+    "viewAllDocuments": "View all documents",
+    "autoRefresh": "Auto-refresh every 30s",
+    "metrics": {
+      "uptime": "Uptime",
+      "totalRequests": "Total Requests",
+      "requestStatistics": "Request Statistics",
+      "total": "Total",
+      "failed": "Failed",
+      "successful": "Successful",
+      "performance": "Performance",
+      "successRate": "Success Rate",
+      "errorRate": "Error Rate",
+      "percentage": "Percentage"
+    },
+    "health": {
+      "title": "Health Status",
+      "freeSpace": "Free Space"
+    }
   },
   "knowledge": {
     "title": "Knowledge Base",
