@@ -1,15 +1,21 @@
-# Sprint Review: [Incident Analysis Skills]
+# Sprint Review: [Agent Console Frontend]
+
 ## Objetivos
-- Implementar `IncidentAnalysisTool` (Lógica específica para analizar JSONs de incidentes)
-- Mejorar `AgentLooper` con manejo de errores y reintentos (Loop robusto)
-- Integrar Prompt personalizado para SRE ("Eres un experto en SRE...")
+- [ ] Implementar vista `AgentConsole.vue`
+    - [ ] Listado de agentes (Stats Cards)
+    - [ ] Controles de Start/Stop por agente
+- [ ] Implementar vista de detalles `AgentDetails.vue`
+    - [ ] Visualización de logs en tiempo real (WebSocket)
+    - [ ] Historial de ejecuciones
+- [ ] Integración con Backend
+    - [ ] Consumir endpoints `/api/v1/agents`
+    - [ ] Conectar cliente STOMP/WebSocket
 
 ## Criterios de Aceptación
-1. El agente recibe un ID de incidente y devuelve un Análisis preliminar en JSON.
-2. El agente utiliza la herramienta de Análisis.
+1. UI muestra estado real de los agentes.
+2. Logs aparecen en vivo sin recargar la página.
+3. Botones de acción funcionan correctamente.
 
 ## Estado del Agente
-- **Última ejecución de tests:**
-- **Errores encontrados:** 
-
-## Propuesta de Siguientes Pasos
+- **Última ejecución de tests:** N/A
+- **Errores encontrados:** N/A

@@ -50,3 +50,9 @@ build/
 # OS Specific
 .DS_Store
 Thumbs.db
+*.txt
+*-cwd
+
+sprint*.md
+.env
+*.env

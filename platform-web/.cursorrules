@@ -18,4 +18,5 @@
    - NO asumas requerimientos fuera de `sprint-review.md`.
    - NO propongas sprints fuera del proyecto actual.
    - NO consideres un sprint terminado sin que los tests pasen en verde.
+   - Si en algun paso de la implementación que estes haciendo falta algun endpoint de backend o funcionalidad que necesites de los microservicios que estan en platform/**  debes parar y documentar en el sprint-review que es lo que necesitas.  Y cuando te de el ok el usuario verificas y y solo continuas si realmente esta lo que necesitas.
    - Si un error persiste tras 3 intentos, detente y pide feedback humano antes de seguir.

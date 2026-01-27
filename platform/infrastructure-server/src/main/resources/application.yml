@@ -5,16 +5,14 @@ spring:
   application:
     name: infrastructure-server
   profiles:
-    active: native
+    active: ${ActiveProfile:dev} 
+    group:
+      dev: dev,native
+      prod: prod
   security:
     user:
-      name: admin
-      password: password
-  cloud:
-    config:
-      server:
-        native:
-          search-locations: file:./src/main/resources/config-repo/
+      name: ${CONFIG_SERVER_USERNAME}
+      password: ${CONFIG_SERVER_PASSWORD}
 
 eureka:
   instance:
@@ -25,8 +23,3 @@ eureka:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

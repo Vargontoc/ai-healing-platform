@@ -17,6 +17,7 @@ Esta es la interfaz de control de la plataforma. Su proposito es visualizar la s
 2. Agent Console: Una terminal simulada donde puedes ver el log de razonamiento del agent-orchestrator.
 3. Incident Feed: Lista de tickets provenientes del incident manager, ordenados por fecha de creación. Al hacer click en un ticket, se muestra el detalle del incidente con la explicación de la IA y las sugerencias de fix.
 4. Knowledge Explorer: Buscador para consultar la base de conocimiento RAG del document-analyzer.
+5. Real time Viewer: Ver en tiempo real los agentes ejecutandose, los logs que generan y las respuestas que obtienen.
 
 # Gateway Integration
 - Front-End nunca habla directamente con los microservicios. Todas las llamadas van al puerto del api-gateway.

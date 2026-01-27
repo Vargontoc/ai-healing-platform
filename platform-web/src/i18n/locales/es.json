@@ -1,0 +1,193 @@
+{
+  "app": {
+    "title": "Plataforma de Sanación IA",
+    "subtitle": "Gestión Inteligente de Infraestructura"
+  },
+  "nav": {
+    "dashboard": "Panel",
+    "serviceMap": "Mapa de Servicios",
+    "agentConsole": "Consola de Agentes",
+    "incidents": "Incidencias",
+    "knowledge": "Base de Conocimiento",
+    "logout": "Cerrar Sesión"
+  },
+  "auth": {
+    "login": "Iniciar Sesión",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "rememberMe": "Recordarme",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "loginButton": "Entrar",
+    "loggingIn": "Iniciando sesión...",
+    "welcome": "Bienvenido a la Plataforma de Sanación IA",
+    "description": "Inicia sesión para acceder a la consola de gestión inteligente de infraestructura"
+  },
+  "dashboard": {
+    "title": "Panel",
+    "welcome": "Bienvenido de nuevo",
+    "overview": "Resumen del Sistema",
+    "services": {
+      "title": "Servicios",
+      "total": "Total de Servicios",
+      "instances": "Total de Instancias",
+      "up": "Servicios Activos",
+      "down": "Servicios Caídos"
+    },
+    "incidents": {
+      "title": "Incidencias",
+      "total": "Total de Incidencias",
+      "topServices": "Servicios con Más Incidencias"
+    },
+    "autoRefresh": "Actualización automática cada 30 segundos"
+  },
+  "serviceMap": {
+    "title": "Mapa de Servicios",
+    "status": "Estado",
+    "healthy": "Saludable",
+    "degraded": "Degradado",
+    "down": "Caído",
+    "instances": "Instancias",
+    "noServices": "No se encontraron servicios"
+  },
+  "agentConsole": {
+    "title": "Consola de Agentes",
+    "selectAgent": "Seleccionar agente",
+    "start": "Iniciar",
+    "stop": "Detener",
+    "startAgent": "Iniciar Agente",
+    "stopAgent": "Detener Agente",
+    "status": {
+      "running": "Ejecutando",
+      "stopped": "Detenido",
+      "error": "Error"
+    },
+    "type": {
+      "incident_analyzer": "Analizador de Incidencias",
+      "auto_fix": "Reparación Automática"
+    },
+    "totalExecutions": "Ejecuciones Totales",
+    "successRate": "Tasa de Éxito",
+    "avgTime": "Tiempo Prom.",
+    "configuration": "Configuración",
+    "autoRestart": "Reinicio Automático",
+    "maxConcurrentTasks": "Tareas Concurrentes Máx.",
+    "timeout": "Tiempo de Espera",
+    "execution": "Ejecución",
+    "createdAt": "Creado el",
+    "lastExecution": "Última Ejecución",
+    "lastError": "Último Error",
+    "never": "Nunca",
+    "logs": "Registros",
+    "showingLogs": "Mostrando {count} de {total} registros",
+    "noLogs": "No hay registros disponibles",
+    "noAgents": "No se encontraron agentes"
+  },
+  "incidents": {
+    "title": "Incidencias",
+    "new": "Nueva Incidencia",
+    "noIncidents": "No se encontraron incidencias",
+    "status": {
+      "open": "Abierta",
+      "closed": "Cerrada",
+      "resolved": "Resuelta"
+    },
+    "table": {
+      "id": "ID",
+      "service": "Servicio",
+      "errorType": "Tipo de Error",
+      "description": "Descripción",
+      "status": "Estado",
+      "detected": "Detectada",
+      "occurrences": "Ocurrencias"
+    },
+    "pagination": {
+      "rowsPerPage": "Filas por página",
+      "page": "Página",
+      "of": "de",
+      "previous": "Anterior",
+      "next": "Siguiente"
+    }
+  },
+  "incidentDetail": {
+    "incident": "Incidencia",
+    "backToIncidents": "Volver a Incidencias",
+    "errorTitle": "Error al Cargar la Incidencia",
+    "errorMessage": "No se pudo encontrar la incidencia o ocurrió un error al cargarla.",
+    "affectedService": "Servicio Afectado",
+    "firstDetected": "Primera Detección",
+    "lastSeen": "Última Vista",
+    "occurrences": "Ocurrencias",
+    "timesReported": "veces reportada",
+    "errorDetails": "Detalles del Error",
+    "timeline": "Línea de Tiempo",
+    "firstOccurrence": "Primera Ocurrencia",
+    "incidentCreated": "La incidencia fue creada y detectada por primera vez",
+    "lastOccurrence": "Última Ocurrencia",
+    "totalOccurrences": "{count} ocurrencias totales",
+    "justNow": "Justo ahora",
+    "minutesAgo": "hace {minutes} minutos",
+    "hoursAgo": "hace {hours} horas",
+    "daysAgo": "hace {days} días"
+  },
+  "serviceDetail": {
+    "backToServices": "Volver al Mapa de Servicios",
+    "errorTitle": "Error al Cargar el Servicio",
+    "errorMessage": "No se pudo encontrar el servicio o ocurrió un error al cargarlo.",
+    "microservice": "Microservicio",
+    "activeInstances": "Instancias Activas",
+    "openIncidents": "Incidencias Abiertas",
+    "instances": "Instancias",
+    "noInstances": "No se encontraron instancias activas",
+    "recentIncidents": "Incidencias Recientes",
+    "noIncidents": "No se encontraron incidencias para este servicio",
+    "viewAllIncidents": "Ver todas las incidencias",
+    "occurrences": "ocurrencias",
+    "documentation": "Documentación",
+    "noDocuments": "No se encontró documentación para este servicio",
+    "uploaded": "Subido",
+    "viewAllDocuments": "Ver todos los documentos"
+  },
+  "knowledge": {
+    "title": "Base de Conocimiento",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar documentos...",
+    "noResults": "No se encontraron documentos",
+    "upload": "Subir",
+    "uploadDocument": "Subir Documento",
+    "uploading": "Subiendo...",
+    "file": "Archivo",
+    "serviceId": "ID de Servicio",
+    "version": "Versión",
+    "type": "Tipo",
+    "size": "Tamaño",
+    "service": "Servicio",
+    "uploaded": "Subido",
+    "analyzed": "Analizado",
+    "status": {
+      "analyzed": "Analizado",
+      "pending": "Pendiente",
+      "error": "Error"
+    },
+    "filters": {
+      "allTypes": "Todos los Tipos",
+      "allStatus": "Todos los Estados"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "refresh": "Actualizar",
+    "all": "Todos",
+    "yes": "Sí",
+    "no": "No",
+    "locale": "es-ES"
+  }
+}

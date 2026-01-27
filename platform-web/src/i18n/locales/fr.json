@@ -1,0 +1,193 @@
+{
+  "app": {
+    "title": "Plateforme de Guérison IA",
+    "subtitle": "Gestion Intelligente d'Infrastructure"
+  },
+  "nav": {
+    "dashboard": "Tableau de Bord",
+    "serviceMap": "Carte des Services",
+    "agentConsole": "Console d'Agents",
+    "incidents": "Incidents",
+    "knowledge": "Base de Connaissances",
+    "logout": "Déconnexion"
+  },
+  "auth": {
+    "login": "Connexion",
+    "email": "Email",
+    "password": "Mot de passe",
+    "rememberMe": "Se souvenir de moi",
+    "forgotPassword": "Mot de passe oublié?",
+    "loginButton": "Se connecter",
+    "loggingIn": "Connexion en cours...",
+    "welcome": "Bienvenue sur la Plateforme de Guérison IA",
+    "description": "Connectez-vous pour accéder à la console de gestion intelligente d'infrastructure"
+  },
+  "dashboard": {
+    "title": "Tableau de Bord",
+    "welcome": "Bon retour",
+    "overview": "Vue d'ensemble du Système",
+    "services": {
+      "title": "Services",
+      "total": "Total des Services",
+      "instances": "Total des Instances",
+      "up": "Services Actifs",
+      "down": "Services Hors Service"
+    },
+    "incidents": {
+      "title": "Incidents",
+      "total": "Total des Incidents",
+      "topServices": "Services avec Plus d'Incidents"
+    },
+    "autoRefresh": "Actualisation automatique toutes les 30 secondes"
+  },
+  "serviceMap": {
+    "title": "Carte des Services",
+    "status": "Statut",
+    "healthy": "Sain",
+    "degraded": "Dégradé",
+    "down": "Hors Service",
+    "instances": "Instances",
+    "noServices": "Aucun service trouvé"
+  },
+  "agentConsole": {
+    "title": "Console d'Agents",
+    "selectAgent": "Sélectionner un agent",
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "startAgent": "Démarrer l'Agent",
+    "stopAgent": "Arrêter l'Agent",
+    "status": {
+      "running": "En Cours",
+      "stopped": "Arrêté",
+      "error": "Erreur"
+    },
+    "type": {
+      "incident_analyzer": "Analyseur d'Incidents",
+      "auto_fix": "Réparation Automatique"
+    },
+    "totalExecutions": "Exécutions Totales",
+    "successRate": "Taux de Réussite",
+    "avgTime": "Temps Moy.",
+    "configuration": "Configuration",
+    "autoRestart": "Redémarrage Auto",
+    "maxConcurrentTasks": "Tâches Concurrentes Max.",
+    "timeout": "Délai d'Expiration",
+    "execution": "Exécution",
+    "createdAt": "Créé le",
+    "lastExecution": "Dernière Exécution",
+    "lastError": "Dernière Erreur",
+    "never": "Jamais",
+    "logs": "Journaux",
+    "showingLogs": "Affichage de {count} sur {total} journaux",
+    "noLogs": "Aucun journal disponible",
+    "noAgents": "Aucun agent trouvé"
+  },
+  "incidents": {
+    "title": "Incidents",
+    "new": "Nouvel Incident",
+    "noIncidents": "Aucun incident trouvé",
+    "status": {
+      "open": "Ouvert",
+      "closed": "Fermé",
+      "resolved": "Résolu"
+    },
+    "table": {
+      "id": "ID",
+      "service": "Service",
+      "errorType": "Type d'Erreur",
+      "description": "Description",
+      "status": "Statut",
+      "detected": "Détecté",
+      "occurrences": "Occurrences"
+    },
+    "pagination": {
+      "rowsPerPage": "Lignes par page",
+      "page": "Page",
+      "of": "sur",
+      "previous": "Précédent",
+      "next": "Suivant"
+    }
+  },
+  "incidentDetail": {
+    "incident": "Incident",
+    "backToIncidents": "Retour aux Incidents",
+    "errorTitle": "Échec du Chargement de l'Incident",
+    "errorMessage": "L'incident n'a pas pu être trouvé ou une erreur s'est produite lors du chargement.",
+    "affectedService": "Service Affecté",
+    "firstDetected": "Première Détection",
+    "lastSeen": "Dernière Vue",
+    "occurrences": "Occurrences",
+    "timesReported": "fois signalé",
+    "errorDetails": "Détails de l'Erreur",
+    "timeline": "Chronologie",
+    "firstOccurrence": "Première Occurrence",
+    "incidentCreated": "L'incident a été créé et détecté pour la première fois",
+    "lastOccurrence": "Dernière Occurrence",
+    "totalOccurrences": "{count} occurrences totales",
+    "justNow": "À l'instant",
+    "minutesAgo": "il y a {minutes} minutes",
+    "hoursAgo": "il y a {hours} heures",
+    "daysAgo": "il y a {days} jours"
+  },
+  "serviceDetail": {
+    "backToServices": "Retour à la Carte des Services",
+    "errorTitle": "Échec du Chargement du Service",
+    "errorMessage": "Le service n'a pas pu être trouvé ou une erreur s'est produite lors du chargement.",
+    "microservice": "Microservice",
+    "activeInstances": "Instances Actives",
+    "openIncidents": "Incidents Ouverts",
+    "instances": "Instances",
+    "noInstances": "Aucune instance active trouvée",
+    "recentIncidents": "Incidents Récents",
+    "noIncidents": "Aucun incident trouvé pour ce service",
+    "viewAllIncidents": "Voir tous les incidents",
+    "occurrences": "occurrences",
+    "documentation": "Documentation",
+    "noDocuments": "Aucune documentation trouvée pour ce service",
+    "uploaded": "Téléchargé",
+    "viewAllDocuments": "Voir tous les documents"
+  },
+  "knowledge": {
+    "title": "Base de Connaissances",
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher des documents...",
+    "noResults": "Aucun document trouvé",
+    "upload": "Télécharger",
+    "uploadDocument": "Télécharger un Document",
+    "uploading": "Téléchargement...",
+    "file": "Fichier",
+    "serviceId": "ID de Service",
+    "version": "Version",
+    "type": "Type",
+    "size": "Taille",
+    "service": "Service",
+    "uploaded": "Téléchargé",
+    "analyzed": "Analysé",
+    "status": {
+      "analyzed": "Analysé",
+      "pending": "En Attente",
+      "error": "Erreur"
+    },
+    "filters": {
+      "allTypes": "Tous les Types",
+      "allStatus": "Tous les Statuts"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "close": "Fermer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "refresh": "Actualiser",
+    "all": "Tous",
+    "yes": "Oui",
+    "no": "Non",
+    "locale": "fr-FR"
+  }
+}

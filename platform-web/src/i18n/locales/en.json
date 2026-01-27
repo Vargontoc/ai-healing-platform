@@ -1,0 +1,193 @@
+{
+  "app": {
+    "title": "AI Healing Platform",
+    "subtitle": "Intelligent Infrastructure Management"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "serviceMap": "Service Map",
+    "agentConsole": "Agent Console",
+    "incidents": "Incidents",
+    "knowledge": "Knowledge Base",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Sign in",
+    "loggingIn": "Signing in...",
+    "welcome": "Welcome to AI Healing Platform",
+    "description": "Sign in to access the intelligent infrastructure management console"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome back",
+    "overview": "System Overview",
+    "services": {
+      "title": "Services",
+      "total": "Total Services",
+      "instances": "Total Instances",
+      "up": "Services Up",
+      "down": "Services Down"
+    },
+    "incidents": {
+      "title": "Incidents",
+      "total": "Total Incidents",
+      "topServices": "Top Services with Incidents"
+    },
+    "autoRefresh": "Auto-refresh every 30 seconds"
+  },
+  "serviceMap": {
+    "title": "Service Map",
+    "status": "Status",
+    "healthy": "Healthy",
+    "degraded": "Degraded",
+    "down": "Down",
+    "instances": "Instances",
+    "noServices": "No services found"
+  },
+  "agentConsole": {
+    "title": "Agent Console",
+    "selectAgent": "Select agent",
+    "start": "Start",
+    "stop": "Stop",
+    "startAgent": "Start Agent",
+    "stopAgent": "Stop Agent",
+    "status": {
+      "running": "Running",
+      "stopped": "Stopped",
+      "error": "Error"
+    },
+    "type": {
+      "incident_analyzer": "Incident Analyzer",
+      "auto_fix": "Auto Fix"
+    },
+    "totalExecutions": "Total Executions",
+    "successRate": "Success Rate",
+    "avgTime": "Avg. Time",
+    "configuration": "Configuration",
+    "autoRestart": "Auto Restart",
+    "maxConcurrentTasks": "Max Concurrent Tasks",
+    "timeout": "Timeout",
+    "execution": "Execution",
+    "createdAt": "Created At",
+    "lastExecution": "Last Execution",
+    "lastError": "Last Error",
+    "never": "Never",
+    "logs": "Logs",
+    "showingLogs": "Showing {count} of {total} logs",
+    "noLogs": "No logs available",
+    "noAgents": "No agents found"
+  },
+  "incidents": {
+    "title": "Incidents",
+    "new": "New Incident",
+    "noIncidents": "No incidents found",
+    "status": {
+      "open": "Open",
+      "closed": "Closed",
+      "resolved": "Resolved"
+    },
+    "table": {
+      "id": "ID",
+      "service": "Service",
+      "errorType": "Error Type",
+      "description": "Description",
+      "status": "Status",
+      "detected": "Detected At",
+      "occurrences": "Occurrences"
+    },
+    "pagination": {
+      "rowsPerPage": "Rows per page",
+      "page": "Page",
+      "of": "of",
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "incidentDetail": {
+    "incident": "Incident",
+    "backToIncidents": "Back to Incidents",
+    "errorTitle": "Failed to Load Incident",
+    "errorMessage": "The incident could not be found or an error occurred while loading it.",
+    "affectedService": "Affected Service",
+    "firstDetected": "First Detected",
+    "lastSeen": "Last Seen",
+    "occurrences": "Occurrences",
+    "timesReported": "times reported",
+    "errorDetails": "Error Details",
+    "timeline": "Timeline",
+    "firstOccurrence": "First Occurrence",
+    "incidentCreated": "Incident was created and first detected",
+    "lastOccurrence": "Last Occurrence",
+    "totalOccurrences": "{count} total occurrences",
+    "justNow": "Just now",
+    "minutesAgo": "{minutes} minutes ago",
+    "hoursAgo": "{hours} hours ago",
+    "daysAgo": "{days} days ago"
+  },
+  "serviceDetail": {
+    "backToServices": "Back to Service Map",
+    "errorTitle": "Failed to Load Service",
+    "errorMessage": "The service could not be found or an error occurred while loading it.",
+    "microservice": "Microservice",
+    "activeInstances": "Active Instances",
+    "openIncidents": "Open Incidents",
+    "instances": "Instances",
+    "noInstances": "No active instances found",
+    "recentIncidents": "Recent Incidents",
+    "noIncidents": "No incidents found for this service",
+    "viewAllIncidents": "View all incidents",
+    "occurrences": "occurrences",
+    "documentation": "Documentation",
+    "noDocuments": "No documentation found for this service",
+    "uploaded": "Uploaded",
+    "viewAllDocuments": "View all documents"
+  },
+  "knowledge": {
+    "title": "Knowledge Base",
+    "search": "Search",
+    "searchPlaceholder": "Search documents...",
+    "noResults": "No documents found",
+    "upload": "Upload",
+    "uploadDocument": "Upload Document",
+    "uploading": "Uploading...",
+    "file": "File",
+    "serviceId": "Service ID",
+    "version": "Version",
+    "type": "Type",
+    "size": "Size",
+    "service": "Service",
+    "uploaded": "Uploaded",
+    "analyzed": "Analyzed",
+    "status": {
+      "analyzed": "Analyzed",
+      "pending": "Pending",
+      "error": "Error"
+    },
+    "filters": {
+      "allTypes": "All Types",
+      "allStatus": "All Status"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "refresh": "Refresh",
+    "all": "All",
+    "yes": "Yes",
+    "no": "No",
+    "locale": "en-US"
+  }
+}

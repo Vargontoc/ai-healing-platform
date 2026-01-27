@@ -1,0 +1,193 @@
+{
+  "app": {
+    "title": "Plataforma de Cura IA",
+    "subtitle": "Gestão Inteligente de Infraestrutura"
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "serviceMap": "Mapa de Serviços",
+    "agentConsole": "Console de Agentes",
+    "incidents": "Incidentes",
+    "knowledge": "Base de Conhecimento",
+    "logout": "Sair"
+  },
+  "auth": {
+    "login": "Entrar",
+    "email": "Email",
+    "password": "Senha",
+    "rememberMe": "Lembrar-me",
+    "forgotPassword": "Esqueceu a senha?",
+    "loginButton": "Entrar",
+    "loggingIn": "Entrando...",
+    "welcome": "Bem-vindo à Plataforma de Cura IA",
+    "description": "Entre para acessar o console de gestão inteligente de infraestrutura"
+  },
+  "dashboard": {
+    "title": "Painel",
+    "welcome": "Bem-vindo de volta",
+    "overview": "Visão Geral do Sistema",
+    "services": {
+      "title": "Serviços",
+      "total": "Total de Serviços",
+      "instances": "Total de Instâncias",
+      "up": "Serviços Ativos",
+      "down": "Serviços Fora do Ar"
+    },
+    "incidents": {
+      "title": "Incidentes",
+      "total": "Total de Incidentes",
+      "topServices": "Serviços com Mais Incidentes"
+    },
+    "autoRefresh": "Atualização automática a cada 30 segundos"
+  },
+  "serviceMap": {
+    "title": "Mapa de Serviços",
+    "status": "Status",
+    "healthy": "Saudável",
+    "degraded": "Degradado",
+    "down": "Fora do Ar",
+    "instances": "Instâncias",
+    "noServices": "Nenhum serviço encontrado"
+  },
+  "agentConsole": {
+    "title": "Console de Agentes",
+    "selectAgent": "Selecionar agente",
+    "start": "Iniciar",
+    "stop": "Parar",
+    "startAgent": "Iniciar Agente",
+    "stopAgent": "Parar Agente",
+    "status": {
+      "running": "Executando",
+      "stopped": "Parado",
+      "error": "Erro"
+    },
+    "type": {
+      "incident_analyzer": "Analisador de Incidentes",
+      "auto_fix": "Correção Automática"
+    },
+    "totalExecutions": "Execuções Totais",
+    "successRate": "Taxa de Sucesso",
+    "avgTime": "Tempo Méd.",
+    "configuration": "Configuração",
+    "autoRestart": "Reinício Automático",
+    "maxConcurrentTasks": "Tarefas Concorrentes Máx.",
+    "timeout": "Tempo Limite",
+    "execution": "Execução",
+    "createdAt": "Criado em",
+    "lastExecution": "Última Execução",
+    "lastError": "Último Erro",
+    "never": "Nunca",
+    "logs": "Registros",
+    "showingLogs": "Mostrando {count} de {total} registros",
+    "noLogs": "Nenhum registro disponível",
+    "noAgents": "Nenhum agente encontrado"
+  },
+  "incidents": {
+    "title": "Incidentes",
+    "new": "Novo Incidente",
+    "noIncidents": "Nenhum incidente encontrado",
+    "status": {
+      "open": "Aberto",
+      "closed": "Fechado",
+      "resolved": "Resolvido"
+    },
+    "table": {
+      "id": "ID",
+      "service": "Serviço",
+      "errorType": "Tipo de Erro",
+      "description": "Descrição",
+      "status": "Status",
+      "detected": "Detectado",
+      "occurrences": "Ocorrências"
+    },
+    "pagination": {
+      "rowsPerPage": "Linhas por página",
+      "page": "Página",
+      "of": "de",
+      "previous": "Anterior",
+      "next": "Próximo"
+    }
+  },
+  "incidentDetail": {
+    "incident": "Incidente",
+    "backToIncidents": "Voltar aos Incidentes",
+    "errorTitle": "Falha ao Carregar o Incidente",
+    "errorMessage": "O incidente não pôde ser encontrado ou ocorreu um erro ao carregá-lo.",
+    "affectedService": "Serviço Afetado",
+    "firstDetected": "Primeira Detecção",
+    "lastSeen": "Última Vista",
+    "occurrences": "Ocorrências",
+    "timesReported": "vezes reportado",
+    "errorDetails": "Detalhes do Erro",
+    "timeline": "Linha do Tempo",
+    "firstOccurrence": "Primeira Ocorrência",
+    "incidentCreated": "O incidente foi criado e detectado pela primeira vez",
+    "lastOccurrence": "Última Ocorrência",
+    "totalOccurrences": "{count} ocorrências totais",
+    "justNow": "Agora mesmo",
+    "minutesAgo": "há {minutes} minutos",
+    "hoursAgo": "há {hours} horas",
+    "daysAgo": "há {days} dias"
+  },
+  "serviceDetail": {
+    "backToServices": "Voltar ao Mapa de Serviços",
+    "errorTitle": "Falha ao Carregar o Serviço",
+    "errorMessage": "O serviço não pôde ser encontrado ou ocorreu um erro ao carregá-lo.",
+    "microservice": "Microserviço",
+    "activeInstances": "Instâncias Ativas",
+    "openIncidents": "Incidentes Abertos",
+    "instances": "Instâncias",
+    "noInstances": "Nenhuma instância ativa encontrada",
+    "recentIncidents": "Incidentes Recentes",
+    "noIncidents": "Nenhum incidente encontrado para este serviço",
+    "viewAllIncidents": "Ver todos os incidentes",
+    "occurrences": "ocorrências",
+    "documentation": "Documentação",
+    "noDocuments": "Nenhuma documentação encontrada para este serviço",
+    "uploaded": "Enviado",
+    "viewAllDocuments": "Ver todos os documentos"
+  },
+  "knowledge": {
+    "title": "Base de Conhecimento",
+    "search": "Pesquisar",
+    "searchPlaceholder": "Pesquisar documentos...",
+    "noResults": "Nenhum documento encontrado",
+    "upload": "Enviar",
+    "uploadDocument": "Enviar Documento",
+    "uploading": "Enviando...",
+    "file": "Arquivo",
+    "serviceId": "ID do Serviço",
+    "version": "Versão",
+    "type": "Tipo",
+    "size": "Tamanho",
+    "service": "Serviço",
+    "uploaded": "Enviado",
+    "analyzed": "Analisado",
+    "status": {
+      "analyzed": "Analisado",
+      "pending": "Pendente",
+      "error": "Erro"
+    },
+    "filters": {
+      "allTypes": "Todos os Tipos",
+      "allStatus": "Todos os Status"
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "search": "Pesquisar",
+    "filter": "Filtrar",
+    "refresh": "Atualizar",
+    "all": "Todos",
+    "yes": "Sim",
+    "no": "Não",
+    "locale": "pt-BR"
+  }
+}

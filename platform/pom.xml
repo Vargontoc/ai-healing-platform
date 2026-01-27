@@ -8,7 +8,7 @@
 		<version>3.4.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>es.vargontoc</groupId>
+	<groupId>es.vargontoc.ai.healing.platform</groupId>
 	<artifactId>ai-healing-platform</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -19,6 +19,7 @@
 		<module>gateway-server</module>
 		<module>agent-orchestrator-service</module>
 		<module>incident-manager-service</module>
+		<module>document-analyser-service</module>
 	</modules>
 	<properties>
 		<java.version>21</java.version>
