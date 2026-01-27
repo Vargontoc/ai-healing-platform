@@ -53,6 +53,7 @@ Thumbs.db
 *.txt
 *-cwd
 
-sprint*.md
+*/*/sprints/*.md
+*/*/sprints/sprint-review.md
 .env
 *.env
