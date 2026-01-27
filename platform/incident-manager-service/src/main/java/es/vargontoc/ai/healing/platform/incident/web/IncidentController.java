@@ -6,6 +6,7 @@ import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentResponse;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentStatsResponse;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentStatusUpdate;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentAssignment;
+import es.vargontoc.ai.healing.platform.incident.web.dto.StacktraceResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -61,6 +62,12 @@ public class IncidentController {
     @GetMapping("/stats")
     public ResponseEntity<IncidentStatsResponse> stats() {
         return ResponseEntity.ok(service.getStatistics());
+    }
+
+    @Operation(summary = "Get Stacktrace for an Incident", description = "Retrieves the stacktrace of a specific incident.")
+    @GetMapping("/{id}/stacktrace")
+    public ResponseEntity<StacktraceResponse> getStacktrace(@PathVariable Long id) {
+        return ResponseEntity.ok(service.getStacktrace(id));
     }
 
     @Operation(summary = "Get Incident by Hash", description = "Retrieves an incident by its unique hash.")

@@ -5,6 +5,7 @@ import es.vargontoc.ai.healing.platform.incident.repository.IncidentRepository;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentRequest;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentResponse;
 import es.vargontoc.ai.healing.platform.incident.web.dto.IncidentStatsResponse;
+import es.vargontoc.ai.healing.platform.incident.web.dto.StacktraceResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -54,6 +55,7 @@ public class IncidentService {
                 .serviceName(request.serviceName())
                 .errorType(request.errorType())
                 .description(request.description())
+                .stacktrace(request.stacktrace())
                 .status(request.status() != null ? request.status() : "OPEN")
                 .incidentHash(hash)
                 .occurrences(1)
@@ -92,6 +94,12 @@ public class IncidentService {
 
     public IncidentResponse getIncident(Long id) {
         return repository.findById(id).map(this::toResponse)
+                .orElseThrow(() -> new RuntimeException("Incident not found"));
+    }
+
+    public StacktraceResponse getStacktrace(Long id) {
+        return repository.findById(id)
+                .map(i -> new StacktraceResponse(i.getId().toString(), i.getStacktrace()))
                 .orElseThrow(() -> new RuntimeException("Incident not found"));
     }
 

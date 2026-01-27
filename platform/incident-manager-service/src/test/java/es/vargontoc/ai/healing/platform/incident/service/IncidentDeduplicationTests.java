@@ -38,7 +38,8 @@ class IncidentDeduplicationTests {
     @Test
     void shouldCreateNewIncidentWhenHashNotFound() {
         // Arrange
-        IncidentRequest request = new IncidentRequest("service-a", "NPE", "Null pointer exception", "OPEN");
+        IncidentRequest request = new IncidentRequest("service-a", "NPE", "Null pointer exception", "stacktrace",
+                "OPEN");
         when(redisTemplate.opsForValue()).thenReturn(valueOperations);
         when(valueOperations.get(anyString())).thenReturn(null);
         when(repository.findByIncidentHash(anyString())).thenReturn(Optional.empty());
@@ -60,7 +61,7 @@ class IncidentDeduplicationTests {
     @Test
     void shouldIncrementOccurrencesWhenHashFoundInRedis() {
         // Arrange
-        IncidentRequest request = new IncidentRequest("service-a", "NPE", "Duplicate error", "OPEN");
+        IncidentRequest request = new IncidentRequest("service-a", "NPE", "Duplicate error", "stacktrace", "OPEN");
         when(redisTemplate.opsForValue()).thenReturn(valueOperations);
         when(valueOperations.get(anyString())).thenReturn("1"); // Found ID 1
 

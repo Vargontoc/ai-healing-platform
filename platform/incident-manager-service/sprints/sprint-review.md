@@ -1,21 +1,21 @@
-# Sprint Review: Incident Manager Sprint (CERRADO)
+# Sprint Review: Incident Manager Sprint (ACTIVO)
+
 ## Objetivos
-- [x] Implementar de-duplicacion mediante hash SHA-256
-- [x] Agregar integración con Redis para deduplicación rápida
-- [x] Mejorar el consumer de eventos para manejar disferentes tipos de fallos
-- [x] Implentar logica de ocurrencias, si llega hash existente incremeta contador y no crea nuevo ticket
-- [x] Documentar API con OpenAPI (Schemas y Operations)
+- [x] Endpoints
+    - [x] GET /api/v1/incidents/{id}/stacktrace
+        - [x] Response schema
+        {
+            "incidentId" : "123",
+            "stacktrace" : ""
+        }
+    - [x] Aplicar los cambios necesarios en la entidad
 
 ## Criterios de Aceptación
-1. Integridad del sistema mantenida. (Tests Passed)
-2. Tests CRUD incidencias (Test passed)
-3. Documentación con OpenAPI (Verified)
-4. De-duplicación verificada (Test passed)
+1. [x] Pasar los tests
 
 ## Estado del Agente
-- **Última ejecución de tests:** 2026-01-16 (Phoenix Protocol Verified + De-duplication)
-- **Errores encontrados:** N/A. Funcionalidad implementada.
+- **Última ejecución de tests:** (Pass - 2026-01-27T21:21:20)
+- **Errores encontrados:** N/A
 
 ## Propuesta de Siguientes Pasos
-- Recuperar funcionalidades avanzadas (De-duplicación, Redis)
-- Demo
+- Cerrar el sprint y desplegar en entorno de pruebas.
